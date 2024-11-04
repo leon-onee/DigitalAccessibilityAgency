@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Агентство цифровой доступности</title>
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__wrapper">
+				<div class="header__logo">
+					<svg width="190" height="32" viewBox="0 0 190 32">
+						<use href="./assets/svg/sprite.svg#logo-header"></use>
+					</svg>
+				</div>
+				<div class="header__mobile">
+					<ul class="header__contacts">
+						<li role="none">
+							<a href="mailto:info@r-top.ru" aria-label="Напишите нам"
+								>info@r-top.ru</a
+							>
+						</li>
+						<li role="none">
+							<a href="tel:+79960004329" aria-label="Позвоните нам"
+								>+7 996 000-43-29</a
+							>
+						</li>
+					</ul>
+					<nav class="header__nav" aria-label="Основное меню">
+						<ul class="header__menu" role="menubar">
+							<li role="none">
+								<a role="menuitem" href="#web-accessibility">Веб-доступность</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="#universal">Преимущества</a>
+							</li>
+							<li class="dropdown" role="none">
+								<button
+									class="dropdown__caption"
+									aria-haspopup="true"
+									aria-expanded="false"
+									id="services-button"
+									role="menuitem"
+								>
+									<span>Услуги</span><i class="expand"></i>
+								</button>
+								<div
+									class="dropdown__body"
+									aria-hidden="true"
+									aria-labelledby="services-button"
+									role="none"
+								>
+									<ul role="menu">
+										<li role="none">
+											<a inert href="/consultation.html" role="menuitem"
+												>Консультация</a
+											>
+										</li>
+										<li role="none">
+											<a inert href="/audit-accessibility.html" role="menuitem"
+												>Аудит доступности</a
+											>
+										</li>
+										<li role="none">
+											<a inert href="/support.html" role="menuitem"
+												>Сопровождение</a
+											>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/laws.html">Законодательство</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<button
+						class="header__modal btn btn--neutral modal-consultation__open"
+						aria-controls="modalConsultation"
+						aria-label="Получить консультацию"
+					>
+						Получить консультацию
+					</button>
+				</div>
+				<button class="header__burger" aria-label="Открыть меню">
+					<div class="header__burger-inner">
+						<span></span>
+					</div>
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<section
+				class="main-banner"
+				role="region"
+				aria-labelledby="main-banner-title"
+				aria-describedby="main-banner-desc"
+			>
+				<div class="container">
+					<h1 id="main-banner-title" class="main-banner__title">
+						<span>Агентство</span>
+						цифровой доступности
+					</h1>
+					<div id="main-banner-desc" class="main-banner__desc">
+						<p>
+							Комплексное аудирование и сопровождение веб-ресурсов в области
+							цифровой доступности
+						</p>
+						<button
+							class="main-banner__modal btn btn--accent modal-consultation__open"
+							aria-label="Получить консультацию"
+							aria-controls="modalConsultation"
+						>
+							Получить консультацию
+						</button>
+					</div>
+					<div class="main-banner__img">
+						<img src="./assets/img/banner.png" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="web-accessibility"
+				class="web-accessibility"
+				role="region"
+				aria-labelledby="web-accessibility-title"
+			>
+				<div class="container">
+					<h2 id="web-accessibility-title" class="web-accessibility__title">
+						Что такое веб-доступность?
+					</h2>
+					<div class="web-accessibility__desc">
+						<p>
+							Веб-доступность — это возможность пользоваться сайтом со слабым
+							зрением или при полной слепоте, с ограничениями моторики рук или
+							ментальными нарушениями. При этом людей с особыми потребностями
+							кратно больше, чем людей с инвалидностью.
+						</p>
+						<p>
+							По данным «Яндекс», настройки специальных возможностей применяют
+							более 50% пользователей браузера компании (20 млн человек).
+						</p>
+					</div>
+					<div class="web-accessibility__info" role="list">
+						<div class="web-accessibility__circle" role="listitem">
+							<p class="web-accessibility__headline">12 млн</p>
+							<div class="web-accessibility__text">
+								<p>человек с ограниченными возможностями здоровья в России</p>
+							</div>
+						</div>
+						<div class="web-accessibility__circle" role="listitem">
+							<p class="web-accessibility__headline">140 000+</p>
+							<div class="web-accessibility__text">
+								<p>человек с ограниченными возможностями здоровья в России</p>
+							</div>
+						</div>
+						<div class="web-accessibility__circle" role="listitem">
+							<p class="web-accessibility__headline">1,3 млрд</p>
+							<div class="web-accessibility__text">
+								<p>
+									человек с ограниченными возможностями здоровья в мире по
+									данным ВОЗ на 2024 г.
+								</p>
+							</div>
+						</div>
+						<div class="web-accessibility__circle" role="listitem">
+							<p class="web-accessibility__headline">161 млн</p>
+							<div class="web-accessibility__text">
+								<p>незрячих и слабовидящих людей в мире по данным ВОЗ</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="universal"
+				class="universal"
+				role="region"
+				aria-labelledby="universal-title"
+			>
+				<picture class="universal__bg">
+					<source
+						media="(min-width: 1440px)"
+						srcset="./assets/img/universal1440.png"
+					/>
+					<source
+						media="(min-width: 1024px)"
+						srcset="./assets/img/universal1024.png"
+					/>
+					<source
+						media="(min-width: 768px)"
+						srcset="./assets/img/universal768.png"
+					/>
+					<img src="./assets/img/universal.png" alt="" />
+				</picture>
+				<div class="container">
+					<h2 id="universal-title" class="universal__title">
+						Ваш сайт станет универсальным для всех
+					</h2>
+					<button
+						class="universal__modal btn btn--accent modal-consultation"
+						aria-label="Получить консультацию"
+						aria-controls="modalConsultation"
+					>
+						Получить консультацию
+					</button>
+				</div>
+			</section>
+
+			<section class="benefits" role="region" aria-labelledby="benefits-title">
+				<div class="container">
+					<h2 id="benefits-title" class="benefits__title">
+						Три причины обратиться к нам
+					</h2>
+					<div class="benefits__wrapper">
+						<div class="benefits__item">
+							<h3 class="benefits__caption">Новое в законодательстве</h3>
+							<div class="benefits__desc">
+								<p>
+									12 принципов доступности стали обязательными для всех
+									официальных сайтов госвласти, местного самоуправления и их
+									учреждений (приказ Минцифры России от 07.11.2023 № 953).
+									Законодатели уже расширяют этот список.
+								</p>
+							</div>
+							<div class="benefits__img">
+								<img src="./assets/img/benefits.png" alt="" />
+							</div>
+						</div>
+						<div class="benefits__item">
+							<div class="benefits__icon" aria-hidden="true">
+								<svg
+									width="80"
+									height="80"
+									viewBox="0 0 80 80"
+									focusable="false"
+								>
+									<use href="./assets/svg/sprite.svg#benefit1"></use>
+								</svg>
+							</div>
+							<h3 class="benefits__caption">Команда экспертов</h3>
+							<div class="benefits__desc">
+								<p>
+									Доступный сайт — командная работа аналитиков, архитекторов,
+									разработчиков, дизайнеров и тестировщиков. В нашей команде
+									эксперты с инвалидностью и без нее работают вместе.
+								</p>
+							</div>
+						</div>
+						<div class="benefits__item">
+							<div class="benefits__icon" aria-hidden="true">
+								<svg
+									width="80"
+									height="80"
+									viewBox="0 0 80 80"
+									focusable="false"
+								>
+									<use href="./assets/svg/sprite.svg#benefit2"></use>
+								</svg>
+							</div>
+							<h3 class="benefits__caption">Рост для команды</h3>
+							<div class="benefits__desc">
+								<p>
+									Цифровая доступность — новая тема для заказчиков и
+									ИТ-компаний, вдохновение для роста ваших сотрудников.
+									Взгляните на процессы по-новому.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ideas" role="region" aria-labelledby="ideas-title">
+				<div class="container">
+					<h2 id="ideas-title" class="ideas__title">Три идеи для вас:</h2>
+					<div class="ideas__wrapper">
+						<div class="ideas__item">
+							<div class="ideas__content">
+								<h3 class="ideas__caption">Узнать больше о консультации</h3>
+								<div class="ideas__desc">
+									<p>
+										Разовая услуга понадобится для экспресс-оценки доступности
+										сайта, при подготовке или принятии в работу технического
+										задания, а также в поиске оптимальных приемов реализации
+										отдельных компонентов интерфейса.
+									</p>
+								</div>
+								<a
+									href="/consultation.html"
+									class="ideas__more btn btn--accent"
+									aria-label="Узнать больше о консультации"
+								>
+									Подробнее
+								</a>
+							</div>
+							<div class="ideas__img">
+								<img src="./assets/img/consultation.png" alt="" />
+							</div>
+						</div>
+						<div class="ideas__item">
+							<div class="ideas__content">
+								<h4 class="ideas__caption">Узнать больше об аудите</h4>
+								<div class="ideas__desc">
+									<p>
+										Обследование доступности для инвалидов включает оценку
+										соответствия всех страниц сайта обязательным требованиям
+										Минцифры России, дополнительным положениям ГОСТ, WCAG и
+										технического задания заказчика. Итоговый отчет содержит
+										рекомендации по исправлению ошибок.
+									</p>
+								</div>
+								<a
+									href="/audit-accessibility.html"
+									class="ideas__more btn btn--accent"
+									aria-label="Узнать больше об аудите"
+								>
+									Подробнее
+								</a>
+							</div>
+							<div class="ideas__img">
+								<img src="./assets/img/service-composition.png" alt="" />
+							</div>
+						</div>
+						<div class="ideas__item">
+							<div class="ideas__content">
+								<h4 class="ideas__caption">Узнать больше о сопровождении</h4>
+								<div class="ideas__desc">
+									<p>
+										Комплексная поддержка создания или модернизации сайта
+										поможет обеспечить доступность для инвалидов на всех этапах:
+										от концепции и техзадания — до приемки и первичного
+										контентного наполнения.
+									</p>
+								</div>
+								<a
+									href="/support.html"
+									class="ideas__more btn btn--accent"
+									aria-label="Узнать больше о сопровождении"
+								>
+									Подробнее
+								</a>
+							</div>
+							<div class="ideas__img">
+								<img src="./assets/img/support.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="trust" role="region" aria-labelledby="trust-title">
+				<div class="trust__img">
+					<img src="./assets/img/form.png" alt="" />
+				</div>
+				<div class="container trust__grid">
+					<div class="trust__content">
+						<h2 id="trust-title" class="trust__title">Доверьте работу нам</h2>
+						<div class="trust__desc">
+							Универсальный дизайн строится на знаниях международных
+							рекомендаций, законодательства и национальных стандартов
+							Российской Федерации, спецификаций производителей операционных
+							систем и других программных продуктов.
+						</div>
+					</div>
+					<div class="trust__form">
+						<form
+							action=""
+							class="consultation-form"
+							novalidate
+							aria-labelledby="form-title"
+						>
+							<fieldset>
+								<legend class="visually-hidden" id="form-title">
+									Форма для отправки заявки
+								</legend>
+								<div class="input">
+									<label id="requestLabel" for="request"
+										>Опишите ваш запрос</label
+									>
+									<input
+										type="text"
+										id="request"
+										required
+										aria-required="true"
+										aria-labelledby="requestLabel"
+									/>
+								</div>
+								<div class="input">
+									<label id="nameLabel" for="name">ФИО</label>
+									<input aria-labelledby="nameLabel" type="text" id="name" />
+								</div>
+								<div class="input">
+									<label id="positionLabel" for="position">Должность</label>
+									<input
+										aria-labelledby="positionLabel"
+										type="text"
+										id="position"
+									/>
+								</div>
+								<div class="input">
+									<label id="roleLabel" for="role">Ваша роль в проекте</label>
+									<input aria-labelledby="roleLabel" type="text" id="role" />
+								</div>
+								<div class="input">
+									<label id="organizationLabel" for="organization"
+										>Название организации</label
+									>
+									<input
+										type="text"
+										id="organization"
+										required
+										aria-required="true"
+										aria-labelledby="organizationLabel"
+									/>
+								</div>
+								<div class="input">
+									<label id="phoneLabel" for="phone">Телефон</label>
+									<input
+										type="tel"
+										id="phone"
+										required
+										aria-required="true"
+										aria-labelledby="phoneLabel"
+									/>
+								</div>
+								<div class="input">
+									<label id="emailLabel" for="email">Email</label>
+									<input
+										type="email"
+										id="email"
+										required
+										aria-required="true"
+										aria-labelledby="emailLabel"
+									/>
+								</div>
+								<div class="consultation-form__personal">
+									<input
+										type="checkbox"
+										name="personal"
+										id="personal"
+										required
+										aria-required="true"
+										aria-labelledby="personalLabel"
+									/>
+									<label id="personalLabel" for="personal">
+										Согласие с
+										<a href="">политикой конфиденциальности</a>
+									</label>
+								</div>
+								<button class="consultation-form__submit btn btn--accent">
+									Отправить заявку
+								</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__grid">
+					<div class="footer__logo">
+						<svg width="237" height="40" viewBox="0 0 237 40">
+							<use href="./assets/svg/sprite.svg#logo-footer"></use>
+						</svg>
+					</div>
+					<div class="footer__year">@2024</div>
+					<div class="footer__info">
+						<h3 class="footer__tel">
+							<a aria-label="Позвоните нам" href="tel:+79960004329"
+								>+7 996 000-43-29</a
+							>
+						</h3>
+						<h3 class="footer__mail">
+							<a aria-label="Напишите нам" href="mailto:info@r-top.ru"
+								>info@r-top.ru</a
+							>
+						</h3>
+					</div>
+					<div class="footer__address">
+						Нижний Новгород, ул. Алексеевская 13
+					</div>
+					<nav class="footer__nav" aria-label="Нижнее меню">
+						<ul class="footer__list">
+							<li role="none">
+								<a role="menuitem" href="/consultation.html">Консультация</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/audit-accessibility.html">Аудит</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/support.html">Сопровождение</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/laws.html">Законодательство</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<a
+						href="#"
+						aria-label="Политика конфиденциальности"
+						class="footer__legal-info"
+						>Политика конфиденциальности</a
+					>
+				</div>
+			</div>
+		</footer>
+
+		<dialog
+			id="modalConsultation"
+			class="dialog modal-consultation"
+			aria-labelledby="modal-consultation-title"
+		>
+			<div class="dialog__wrapper">
+				<form class="dialog__close" method="dialog">
+					<button
+						class="dialog__close-btn"
+						aria-label="Закрыть диалоговое окно"
+					>
+						<svg width="18" height="18" viewBox="0 0 18 18">
+							<use href="./assets/svg/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="dialog__content">
+					<h4 id="modal-consultation-title" class="dialog__title">
+						Получить консультацию
+					</h4>
+					<form
+						action=""
+						class="consultation-form"
+						novalidate
+						aria-labelledby="form-title"
+					>
+						<fieldset>
+							<legend class="visually-hidden" id="form-title">
+								Форма для отправки заявки
+							</legend>
+							<div class="input">
+								<label for="request">Опишите ваш запрос</label>
+								<input type="text" id="request" required aria-required="true" />
+							</div>
+							<div class="input">
+								<label for="name">ФИО</label>
+								<input type="text" id="name" />
+							</div>
+							<div class="input">
+								<label for="position">Должность</label>
+								<input type="text" id="position" />
+							</div>
+							<div class="input">
+								<label for="role">Ваша роль в проекте</label>
+								<input type="text" id="role" />
+							</div>
+							<div class="input">
+								<label for="organization">Название организации</label>
+								<input
+									type="text"
+									id="organization"
+									required
+									aria-required="true"
+								/>
+							</div>
+							<div class="input">
+								<label for="phone">Телефон</label>
+								<input type="tel" id="phone" required aria-required="true" />
+							</div>
+							<div class="input">
+								<label for="email">Email</label>
+								<input type="email" id="email" required aria-required="true" />
+							</div>
+							<div class="consultation-form__personal">
+								<input
+									type="checkbox"
+									name="personal"
+									id="personal"
+									required
+									aria-required="true"
+								/>
+								<label for="personal">
+									Согласие с
+									<a href="">политикой конфиденциальности</a>
+								</label>
+							</div>
+							<button class="consultation-form__submit btn btn--accent">
+								Отправить заявку
+							</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</dialog>
+
+		<dialog
+			id="modalConsultationSuccess"
+			class="dialog modal-consultation__success"
+			aria-labelledby="modal-consultation__success-title"
+		>
+			<div class="dialog__wrapper">
+				<form class="dialog__close" method="dialog">
+					<button
+						class="dialog__close-btn"
+						aria-label="Закрыть диалоговое окно"
+					>
+						<svg width="18" height="18" viewBox="0 0 18 18">
+							<use href="./assets/svg/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="dialog__content">
+					<h4 id="modal-consultation__success-title" class="dialog__title">
+						Успешно!
+					</h4>
+					<div class="dialog__desc">
+						Наш менеджер свяжется с вами в ближайшее время
+					</div>
+					<form class="modal-consultation__success-close" method="dialog">
+						<button
+							class="btn btn--accent"
+							aria-label="Закрыть диалоговое окно"
+						>
+							Закрыть окно
+						</button>
+					</form>
+				</div>
+			</div>
+		</dialog>
+
+		<script src="./assets/plugins/inputmask.min.js"></script>
+		<script src="./assets/plugins/just-validate.min.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

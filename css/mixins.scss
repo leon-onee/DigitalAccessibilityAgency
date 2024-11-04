@@ -1,0 +1,145 @@
+@mixin accent-large {
+	font-family: 'NAMU', sans-serif;
+	font-size: 80px;
+	line-height: 86px;
+}
+
+@mixin accent-normal {
+	font-family: 'NAMU', sans-serif;
+	font-size: 60px;
+	line-height: 70px;
+}
+
+@mixin accent-small {
+	font-family: 'NAMU', sans-serif;
+	font-size: 40px;
+	line-height: 46px;
+}
+
+@mixin accent-extrasmall {
+	font-family: 'NAMU', sans-serif;
+	font-size: 30px;
+	line-height: 34px;
+}
+
+@mixin headline-desktop-h1 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 56px;
+	line-height: 64px;
+}
+@mixin headline-desktop-h2 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 48px;
+	line-height: 54px;
+}
+@mixin headline-desktop-h3 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 36px;
+	line-height: 40px;
+}
+@mixin headline-desktop-h4 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 30px;
+	line-height: 36px;
+}
+@mixin headline-desktop-h5 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+}
+@mixin headline-desktop-h6 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 22px;
+	line-height: 25px;
+}
+
+@mixin headline-mob-h1 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 35px;
+	line-height: 40px;
+}
+@mixin headline-mob-h2 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 32px;
+	line-height: 38px;
+}
+@mixin headline-mob-h3 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 28px;
+	line-height: 34px;
+}
+@mixin headline-mob-h4 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+}
+@mixin headline-mob-h5 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+}
+@mixin headline-mob-h6 {
+	font-family: 'NAMU', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+@mixin system-large {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+}
+@mixin system-normal {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+@mixin system-small {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+@mixin paragraph-large {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+@mixin paragraph-normal {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+}
+@mixin paragraph-small {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+@mixin paragraph-extrasmall {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(8, 1fr);
+	}
+	@media (min-width: 1024px) {
+		grid-template-columns: repeat(12, 1fr);
+		gap: 24px;
+	}
+}
+
+@mixin grid-fill {
+	grid-column: 4 span;
+	@media (min-width: 768px) {
+		grid-column: 8 span;
+	}
+	@media (min-width: 1024px) {
+		grid-column: 12 span;
+	}
+}

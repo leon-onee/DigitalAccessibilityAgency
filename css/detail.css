@@ -1,0 +1,129 @@
+.service-composition {
+  margin-block: 80px;
+}
+@media (min-width: 768px) {
+  .service-composition {
+    margin-block: 120px;
+  }
+}
+.service-composition__wrapper {
+  display: grid;
+  gap: 48px;
+}
+@media (min-width: 1024px) {
+  .service-composition__wrapper {
+    grid-template-columns: 360px 1fr;
+  }
+}
+@media (min-width: 1440px) {
+  .service-composition__wrapper {
+    gap: 120px;
+  }
+}
+.service-composition__title {
+  color: var(--text-primary);
+  font-family: "NAMU", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+}
+@media (min-width: 768px) {
+  .service-composition__title {
+    font-family: "NAMU", sans-serif;
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+.service-composition__desc {
+  margin-top: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+}
+@media (min-width: 768px) {
+  .service-composition__desc {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.service-composition__item {
+  counter-increment: item;
+  padding-block: 24px;
+  border-bottom: 1px solid var(--gray2);
+}
+@media (min-width: 768px) {
+  .service-composition__item {
+    padding-block: 32px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
+.service-composition__item:first-child {
+  border-top: 1px solid var(--gray2);
+}
+.service-composition__item::before {
+  font-family: var(--second-family);
+  display: grid;
+  place-content: center;
+  content: counter(item);
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  background: var(--green);
+  border-radius: 50%;
+  color: var(--text-black);
+}
+@media (min-width: 768px) {
+  .service-composition__item::before {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    grid-column: 1;
+    margin-right: 16px;
+    font-size: 18px;
+  }
+}
+.service-composition__caption {
+  margin-top: 16px;
+  color: var(--buttons-neutral-hover-background);
+  font-family: "NAMU", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .service-composition__caption {
+    font-family: "NAMU", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    grid-column: 2;
+    margin-top: 0;
+  }
+}
+.service-composition__content {
+  margin-top: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+}
+@media (min-width: 768px) {
+  .service-composition__content {
+    margin-top: 24px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    grid-column: 2;
+  }
+}
+.service-composition__content:only-child {
+  margin-top: 0;
+}
+.service-composition__content ul {
+  padding-left: 1em;
+  list-style: disc;
+}
+.service-composition__content ul li {
+  list-style: disc;
+}/*# sourceMappingURL=detail.css.map */

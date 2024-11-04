@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Консультации по веб-доступности</title>
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/detail.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__wrapper">
+				<div class="header__logo">
+					<svg width="190" height="32" viewBox="0 0 190 32">
+						<use href="./assets/svg/sprite.svg#logo-header"></use>
+					</svg>
+				</div>
+				<div class="header__mobile">
+					<ul class="header__contacts">
+						<li role="none">
+							<a href="mailto:info@r-top.ru" aria-label="Напишите нам"
+								>info@r-top.ru</a
+							>
+						</li>
+						<li role="none">
+							<a href="tel:+79960004329" aria-label="Позвоните нам"
+								>+7 996 000-43-29</a
+							>
+						</li>
+					</ul>
+					<nav class="header__nav" aria-label="Основное меню">
+						<ul class="header__menu" role="menubar">
+							<li role="none">
+								<a role="menuitem" href="#web-accessibility">Веб-доступность</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="#universal">Преимущества</a>
+							</li>
+							<li class="dropdown" role="none">
+								<button
+									class="dropdown__caption"
+									aria-haspopup="true"
+									aria-expanded="false"
+									id="services-button"
+									role="menuitem"
+								>
+									<span>Услуги</span><i class="expand"></i>
+								</button>
+								<div
+									class="dropdown__body"
+									aria-hidden="true"
+									aria-labelledby="services-button"
+									role="none"
+								>
+									<ul role="menu">
+										<li role="none">
+											<a inert href="/consultation.html" role="menuitem"
+												>Консультация</a
+											>
+										</li>
+										<li role="none">
+											<a inert href="/audit-accessibility.html" role="menuitem"
+												>Аудит доступности</a
+											>
+										</li>
+										<li role="none">
+											<a inert href="/support.html" role="menuitem"
+												>Сопровождение</a
+											>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/laws.html">Законодательство</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<button
+						class="header__modal btn btn--neutral modal-consultation__open"
+						aria-controls="modalConsultation"
+						aria-label="Получить консультацию"
+					>
+						Получить консультацию
+					</button>
+				</div>
+				<button class="header__burger" aria-label="Открыть меню">
+					<div class="header__burger-inner">
+						<span></span>
+					</div>
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<section
+				class="service-banner"
+				role="region"
+				aria-labelledby="service-banner-title"
+			>
+				<nav class="breadcrumb" aria-label="Хлебные крошки">
+					<div class="container">
+						<ul class="breadcrumb__list">
+							<li class="breadcrumb__item"><a href="/">Главная</a></li>
+							<li class="breadcrumb__item active" aria-current="page">
+								Консультация
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<div class="container">
+					<div class="service-banner__wrapper service-banner--blue">
+						<div class="service-banner__info">
+							<h1 id="service-banner-title" class="service-banner__title">
+								Консультации <br />
+								по веб-доступности
+							</h1>
+							<div class="service-banner__desc">
+								<p>
+									Предлагаем консультации по наиболее распространенным ситуациям
+									заказчика или исполнителя проекта
+								</p>
+							</div>
+							<button
+								class="service-banner__modal btn btn--accent modal-consultation__open"
+								aria-label="Получить консультацию"
+								aria-controls="modalConsultation"
+							>
+								Получить консультацию
+							</button>
+						</div>
+						<div class="service-banner__img">
+							<img src="./assets/img/consultation.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="service-composition"
+				role="region"
+				aria-labelledby="service-composition-title"
+			>
+				<div class="container service-composition__wrapper">
+					<div class="service-composition__info">
+						<h2
+							id="service-composition-title"
+							class="service-composition__title"
+						>
+							Описание услуги:
+						</h2>
+						<div class="service-composition__desc">
+							<p>Стоимость сопровождения зависит от ситуации каждого клиента</p>
+						</div>
+					</div>
+					<ul class="service-composition__list">
+						<li class="service-composition__item">
+							<h3 class="service-composition__caption">
+								Экспресс-оценка доступности вашего веб-сайта или мобильного
+								приложения:
+							</h3>
+							<div class="service-composition__content">
+								<p>
+									Мы проведем аудит главной страницы, выделим типовые ошибки и
+									предоставим детальный устный отзыв. Это позволит вам быстро
+									выявить основные проблемы и получить рекомендации по их
+									исправлению.
+								</p>
+							</div>
+						</li>
+						<li class="service-composition__item">
+							<h3 class="service-composition__caption">
+								Включение требований доступности в техническое задание
+							</h3>
+							<div class="service-composition__content">
+								<p>
+									Мы поможем вам разобраться в описании требований, а также
+									дадим рекомендации по принятию их в работу.
+								</p>
+							</div>
+						</li>
+						<li class="service-composition__item">
+							<h3 class="service-composition__caption">
+								Организация цифровой доступности в команде
+							</h3>
+							<div class="service-composition__content">
+								<p>
+									Мы предоставим рекомендации, поможем с самостоятельным
+									проведением тестирования, поиском тестировщиков и необходимой
+									информации.
+								</p>
+							</div>
+						</li>
+						<li class="service-composition__item">
+							<h3 class="service-composition__caption">
+								Законодательство и доступность
+							</h3>
+							<div class="service-composition__content">
+								<p>
+									Мы разъясним вам требования и рекомендации законодательства в
+									области цифровой доступности.
+								</p>
+							</div>
+						</li>
+						<li class="service-composition__item">
+							<h3 class="service-composition__caption">
+								Помощь в выборе решений адаптации отдельных компонентов
+							</h3>
+							<div class="service-composition__content">
+								<p>
+									Мы предложим консультацию по выбору оптимальных решений с
+									учетом требований доступности и ваших ресурсов.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="trust" role="region" aria-labelledby="trust-title">
+				<div class="trust__img">
+					<img src="./assets/img/form.png" alt="" />
+				</div>
+				<div class="container trust__grid">
+					<div class="trust__content">
+						<h2 id="trust-title" class="trust__title">Доверьте работу нам</h2>
+						<div class="trust__desc">
+							Универсальный дизайн строится на знаниях международных
+							рекомендаций, законодательства и национальных стандартов
+							Российской Федерации, спецификаций производителей операционных
+							систем и других программных продуктов.
+						</div>
+					</div>
+					<div class="trust__form">
+						<form
+							action=""
+							class="consultation-form"
+							novalidate
+							aria-labelledby="form-title"
+						>
+							<fieldset>
+								<legend class="visually-hidden" id="form-title">
+									Форма для отправки заявки
+								</legend>
+								<div class="input">
+									<label for="request">Опишите ваш запрос</label>
+									<input
+										type="text"
+										id="request"
+										required
+										aria-required="true"
+									/>
+								</div>
+								<div class="input">
+									<label for="name">ФИО</label>
+									<input type="text" id="name" />
+								</div>
+								<div class="input">
+									<label for="position">Должность</label>
+									<input type="text" id="position" />
+								</div>
+								<div class="input">
+									<label for="role">Ваша роль в проекте</label>
+									<input type="text" id="role" />
+								</div>
+								<div class="input">
+									<label for="organization">Название организации</label>
+									<input
+										type="text"
+										id="organization"
+										required
+										aria-required="true"
+									/>
+								</div>
+								<div class="input">
+									<label for="phone">Телефон</label>
+									<input type="tel" id="phone" required aria-required="true" />
+								</div>
+								<div class="input">
+									<label for="email">Email</label>
+									<input
+										type="email"
+										id="email"
+										required
+										aria-required="true"
+									/>
+								</div>
+								<div class="consultation-form__personal">
+									<input
+										type="checkbox"
+										name="personal"
+										id="personal"
+										required
+										aria-required="true"
+									/>
+									<label for="personal">
+										Согласие с
+										<a href="">политикой конфиденциальности</a>
+									</label>
+								</div>
+								<button class="consultation-form__submit btn btn--accent">
+									Отправить заявку
+								</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__grid">
+					<div class="footer__logo">
+						<svg width="237" height="40" viewBox="0 0 237 40">
+							<use href="./assets/svg/sprite.svg#logo-footer"></use>
+						</svg>
+					</div>
+					<div class="footer__year">@2024</div>
+					<div class="footer__info">
+						<h3 class="footer__tel">
+							<a aria-label="Позвоните нам" href="tel:+79960004329"
+								>+7 996 000-43-29</a
+							>
+						</h3>
+						<h3 class="footer__mail">
+							<a aria-label="Напишите нам" href="mailto:info@r-top.ru"
+								>info@r-top.ru</a
+							>
+						</h3>
+					</div>
+					<div class="footer__address">
+						Нижний Новгород, ул. Алексеевская 13
+					</div>
+					<nav class="footer__nav" aria-label="Нижнее меню">
+						<ul class="footer__list">
+							<li role="none">
+								<a role="menuitem" href="/consultation.html">Консультация</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/audit-accessibility.html">Аудит</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/support.html">Сопровождение</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/laws.html">Законодательство</a>
+							</li>
+							<li role="none">
+								<a role="menuitem" href="/contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<a
+						href="#"
+						aria-label="Политика конфиденциальности"
+						class="footer__legal-info"
+						>Политика конфиденциальности</a
+					>
+				</div>
+			</div>
+		</footer>
+
+		<dialog
+			id="modalConsultation"
+			class="dialog modal-consultation"
+			aria-labelledby="modal-consultation-title"
+		>
+			<div class="dialog__wrapper">
+				<form class="dialog__close" method="dialog">
+					<button
+						class="dialog__close-btn"
+						aria-label="Закрыть диалоговое окно"
+					>
+						<svg width="18" height="18" viewBox="0 0 18 18">
+							<use href="./assets/svg/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="dialog__content">
+					<h4 id="modal-consultation-title" class="dialog__title">
+						Получить консультацию
+					</h4>
+					<form
+						action=""
+						class="consultation-form"
+						novalidate
+						aria-labelledby="form-title"
+					>
+						<fieldset>
+							<legend class="visually-hidden" id="form-title">
+								Форма для отправки заявки
+							</legend>
+							<div class="input">
+								<label for="request">Опишите ваш запрос</label>
+								<input type="text" id="request" required aria-required="true" />
+							</div>
+							<div class="input">
+								<label for="name">ФИО</label>
+								<input type="text" id="name" />
+							</div>
+							<div class="input">
+								<label for="position">Должность</label>
+								<input type="text" id="position" />
+							</div>
+							<div class="input">
+								<label for="role">Ваша роль в проекте</label>
+								<input type="text" id="role" />
+							</div>
+							<div class="input">
+								<label for="organization">Название организации</label>
+								<input
+									type="text"
+									id="organization"
+									required
+									aria-required="true"
+								/>
+							</div>
+							<div class="input">
+								<label for="phone">Телефон</label>
+								<input type="tel" id="phone" required aria-required="true" />
+							</div>
+							<div class="input">
+								<label for="email">Email</label>
+								<input type="email" id="email" required aria-required="true" />
+							</div>
+							<div class="consultation-form__personal">
+								<input
+									type="checkbox"
+									name="personal"
+									id="personal"
+									required
+									aria-required="true"
+								/>
+								<label for="personal">
+									Согласие с
+									<a href="">политикой конфиденциальности</a>
+								</label>
+							</div>
+							<button class="consultation-form__submit btn btn--accent">
+								Отправить заявку
+							</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</dialog>
+
+		<dialog
+			id="modalConsultationSuccess"
+			class="dialog modal-consultation__success"
+			aria-labelledby="modal-consultation__success-title"
+		>
+			<div class="dialog__wrapper">
+				<form class="dialog__close" method="dialog">
+					<button
+						class="dialog__close-btn"
+						aria-label="Закрыть диалоговое окно"
+					>
+						<svg width="18" height="18" viewBox="0 0 18 18">
+							<use href="./assets/svg/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="dialog__content">
+					<h4 id="modal-consultation__success-title" class="dialog__title">
+						Успешно!
+					</h4>
+					<div class="dialog__desc">
+						Наш менеджер свяжется с вами в ближайшее время
+					</div>
+					<form class="modal-consultation__success-close" method="dialog">
+						<button
+							class="btn btn--accent"
+							aria-label="Закрыть диалоговое окно"
+						>
+							Закрыть окно
+						</button>
+					</form>
+				</div>
+			</div>
+		</dialog>
+
+		<script src="./assets/plugins/inputmask.min.js"></script>
+		<script src="./assets/plugins/just-validate.min.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
